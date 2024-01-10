@@ -1,0 +1,355 @@
+html{
+    background-color: #1b1b32;
+}
+
+
+/*
+la clase es del tipo flex y con direccion row por ende podemos usar las propiedades para distribuir sus elementos
+*/
+
+.navbar{
+    background-color: #F8F7FF;
+    opacity: 1;
+}
+
+
+.navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+
+    align-items: flex-start;
+
+}
+
+/*Seccion Hero */
+
+.hero {
+    min-height: 450px;
+    text-align: center;
+    background-color: #F6AE2D;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-principal h2 {
+    font-size: 1.51rem;
+    color: #001524;
+}
+
+.hero-principal h1 {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 1.51rem;
+    color: #001524;
+}
+
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+
+
+/*Proyectos recientes*/
+.proyectos-recientes{
+    padding: 40px;
+}
+
+/*Estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.texto-negro{
+    color:#001524
+}
+.texto-blanco{
+    color:#F8F7FF
+}
+
+.seccion-clara{
+    background-color: #F8F7FF;
+    color: #001524;
+}
+.seccion-oscura {
+    background-color: #001524;
+    color: #F8F7FF;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+/*Contenido que se verá sobre la imagen */
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.proyecto{
+    position: relative;
+}
+
+
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+/*
+.experiencia .row div{ 
+    height: 250px;
+    background-color: purple;
+    border: 3px solid orange;
+}*/
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges{
+    margin: 5px;
+}
+
+
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: #F8F7FF;
+    background-color: #001524;
+}
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+    background-color: rgb(13,110,253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border:2px solid white;
+    padding: 1.25em 2em;/* em es relativo al tamaño de letra de su contenedor*/
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+.contacto button:hover i{
+    color: black;
+}
+
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/*Footer */
+footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border:2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in ;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13,110,253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+   
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*Hacer que el titulo y los iconos sean mas pequeños en pantallas mas pequeñas*/
+@media screen and (max-width:400px){
+        .overlay p{
+            font-size: 18px;
+        }
+
+        .overlay i{
+            font-size: 40px;
+        }
+}    
+
+
+/*el estilo se aplica hasta que alcance el ancho establecido es decir de 767 para abajo */
+@media screen and (max-width:767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/*el estilo se aplicará desde un minimo de 700px de ancho, a partir de los 700px*/
+@media screen and (min-width:700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+        /* para que la imagen no se estire en visualizaciónes mas grandes, que no ocupe todo el ancho */
+    }
+
+}
